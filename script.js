@@ -1,33 +1,27 @@
+// Definition of a function named searchCourses(). It will be called when the search button is pressed.
 function searchCourses() {
-    let input = document.getElementById('searchInput').value.toLowerCase();
-    let courses = document.querySelectorAll('.course-card');
-    let found = 0;
-  
-    courses.forEach(course => {
-      let title = course.getAttribute('data-title').toLowerCase();
-      let desc = course.getAttribute('data-desc').toLowerCase();
-  
-      if (title.includes(input) || desc.includes(input)) {
-        course.style.display = 'flex';
-        found++;
-      } else {
-        course.style.display = 'none';
-      }
-    });
-  
-    document.getElementById('searchResultText').textContent =
-      input === '' ? 'اختر المساق الذي تريد دراسته واكتشف أفضل المصادر التعليمية المتاحة'
-                   : `عدد النتائج: ${found}`;
-  }
-  
-  // عداد المساقات والمصادر
-  window.onload = () => {
-    let courseCount = document.querySelectorAll('.course-card').length;
-    let resourceCount = 0;
-    document.querySelectorAll('.badge-outline').forEach(b => {
-      resourceCount += parseInt(b.textContent);
-    });
-    document.getElementById('courseCount').textContent = courseCount;
-    document.getElementById('resourceCount').textContent = resourceCount;
-  };
-  
+
+  //It converts the text to lowercase to facilitate searching regardless of case.
+  let input = document.getElementById('searchInput').value.toLowerCase(); 
+  let courses = document.querySelectorAll('.course-card'); //It selects all elements that have class = course-card.
+  let found = 0; //Define a counter and set its initial value to 0 for the number of courses that match the search.
+
+  courses.forEach(course => {   //Repeat the examination process for each course.
+    let title = course.getAttribute('data-title').toLowerCase();
+    let desc = course.getAttribute('data-desc').toLowerCase();
+
+    //check if the search text is present within the course.
+    if (title.includes(input) || desc.includes(input)) {
+      course.style.display = 'flex';   // displayed The course 
+      found++; //Increases the number of matching results
+    } else {
+      //If the text does not exist Hides the course from the page
+      course.style.display = 'none';
+    }
+  });
+
+  //show the result of search
+  document.getElementById('searchResultText').textContent =
+    input === '' ? ''  //If the research text is empty, nothing is displayed 
+      : `Results Number : ${found}`; //If there is text: it displays the number of matching courses.
+}

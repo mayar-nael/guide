@@ -1,38 +1,52 @@
 <!DOCTYPE html>
-<html lang="ar" dir="ltr">
+
 <head>
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>Computer Engineering Gudie</title>
-  <link rel="stylesheet" href="style.css">    <!-- external css-->
-  
+  <link rel="stylesheet" href="style.css"> <!-- external css-->
+
   <!-- Download Font Awesome 6.4.0 from the internet (from CDN) so that I can use the ready-made icons. -->
   <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
 </head>
+
 <body>
 
-  <!-- الهيدر -->
+  <!-- Header Section -->
   <header class="header">
     <div class="header-content">
-      <div class="logo-area">
-        <!--From the library, show at page the solid graduation cap icon and not the hollow one. -->
+      <div>
+        <!--From the library, show at page the solid graduation cap icon and not the hollow one and make it size xx-large -->
         <div class="fa-solid fa-graduation-cap" style="font-size: xx-large;"></div>
         <h1 class="title">Guide</h1>
       </div>
-      
-      <p class="subtitle"> Your guide to studying computer engineering 📘 </p>
-     
+
+      <p class="subtitle"> Your guide to studying computer engineering <i class="fa-solid fa-book"></i> </p>
+
     </div>
   </header>
-<br>
+  <br>
 
-  <!-- الإحصائيات -->
-  <section class="stats container">
-    <div class="stat-box"><div class="stat-number" id="courseCount">0</div><div class="stat-label">Educational Source</div></div>
-    <div class="stat-box"><div class="stat-number" id="resourceCount">0</div><div class="stat-label">Education Resource</div></div>
-    <div class="stat-box"><div class="stat-number">100%</div><div class="stat-label">Free Website</div></div>
+  <!-- Statistics -->
+
+  <!-- First section -->
+  <section class="Information">
+    <!-- Create 3 boxes containing information about the number of sources (59) and materials (12) on the site and guide is a free site -->
+    <div class="Information-box">
+      <div class="Information-number" id="courseCount">12</div>
+      <div class="Information-label">Educational Source</div>
+    </div>
+    <div class="Information-box">
+      <div class="Information-number" id="resourceCount">59</div>
+      <div class="Information-label">Education Resource</div>
+    </div>
+    <div class="Information-box">
+      <div class="Information-number">100%</div>
+      <div class="Information-label">Free Website</div>
+    </div>
   </section>
 
+  <!-- Seconad section -->
   <section>
     <div class="search-bar">
       <!-- Create a text input box. -->
@@ -40,14 +54,17 @@
       <!--Create a search button , when this button is clicked , call the searchCourses() function from JavaScript . -->
       <button onclick="searchCourses()">Search</button>
     </div>
+    <p class="section-subtitle" id="searchResultText"></p>
   </section>
   <br>
   <h2 class="section-title">Computer Engineering Cources</h2>
-  <!-- <p class="section-subtitle" id="searchResultText">Choose the course you want to study and discover the best educational resources available.</p> -->
 
-  <!-- الكورسات -->
+  <!-- Third section -->
+  <!-- Courses -->
   <section class="courses container" id="coursesList">
-    <!-- كل مساق كارت -->
+
+    <!-- Create a card for each course containing information about it
+      (name - level - number of resources - a brief description of the course) -->
     <div class="course-card" data-title="Python" data-desc="البرمجة بلغة بايثون">
       <div class="course-header">
         <div class="course-icon"><i class="fa-solid fa-code"></i></div>
@@ -55,8 +72,12 @@
         <span class="badge-outline">6 Resources</span>
       </div>
       <h3 class="course-title"> Programming in Python</h3>
-      <p class="course-desc">Learn the basics of Python programming from scratch with practical examples and applications.</p>
-      <a href="python.html" class="course-btn" target="_blank"><i class="fa-solid fa-arrow-up-right-from-square"></i> Explore Resources</a>
+      <p class="course-desc">Learn the basics of Python programming from scratch with practical examples and
+        applications.</p>
+      <!-- Create a button to explore the course resources for this course (html)
+      When clicked, open a new tab with the course resources page. -->
+      <a href="python.html" class="course-btn"><i class="fa-solid fa-arrow-up-right-from-square"></i> Explore
+        Resources</a>
     </div>
 
     <div class="course-card" data-title="Database" data-desc="نظم قواعد البيانات">
@@ -67,112 +88,159 @@
       </div>
       <h3 class="course-title">DataBase</h3>
       <p class="course-desc">Learn DataBase design by SQL language & MySql</p>
-      <a href="database.html" class="course-btn" target="_blank"><i class="fa-solid fa-arrow-up-right-from-square"></i> Explore Resources</a>
+      <a href="database.html" class="course-btn"><i class="fa-solid fa-arrow-up-right-from-square"></i> Explore
+        Resources</a>
     </div>
 
     <div class="course-card" data-title="Operating Systems" data-desc="أنظمة التشغيل">
-      <div class="course-header"><div class="course-icon"><i class="fa-solid fa-desktop"></i></div><span class="badge medium">Intermediate</span><span class="badge-outline">4 Resources</span></div>
+      <div class="course-header">
+        <div class="course-icon"><i class="fa-solid fa-desktop"></i></div><span
+          class="badge medium">Intermediate</span><span class="badge-outline">5 Resources</span>
+      </div>
       <h3 class="course-title">Operating System</h3>
       <p class="course-desc">Learn how operating systems work and manage resources.</p>
-      <a href="operating-systems.html" class="course-btn"><i class="fa-solid fa-arrow-up-right-from-square"></i> Explore Resources</a>
+      <a href="operating-systems.html" class="course-btn"><i class="fa-solid fa-arrow-up-right-from-square"></i> Explore
+        Resources</a>
     </div>
 
     <div class="course-card" data-title="Web Development" data-desc="تطوير الويب">
-      <div class="course-header"><div class="course-icon"><i class="fa-solid fa-globe"></i></div><span class="badge beginner">Beginner</span><span class="badge-outline">5 Resources</span></div>
+      <div class="course-header">
+        <div class="course-icon"><i class="fa-solid fa-globe"></i></div><span
+          class="badge beginner">Beginner</span><span class="badge-outline">6 Resources</span>
+      </div>
       <h3 class="course-title">Web Development</h3>
       <p class="course-desc">Start your journey in the development of websites from scratch</p>
-      <a href="web-development.html" class="course-btn"><i class="fa-solid fa-arrow-up-right-from-square"></i> Explore Resources</a>
+      <a href="web-development.html" class="course-btn"><i class="fa-solid fa-arrow-up-right-from-square"></i> Explore
+        Resources</a>
     </div>
 
     <div class="course-card" data-title="Electronic Circuits" data-desc="الدوائر الإلكترونية">
-      <div class="course-header"><div class="course-icon"><i class="fa-solid fa-bolt"></i></div><span class="badge medium">Intermediate</span><span class="badge-outline">3 Resources</span></div>
+      <div class="course-header">
+        <div class="course-icon"><i class="fa-solid fa-bolt"></i></div><span
+          class="badge medium">Intermediate</span><span class="badge-outline">6 Resources</span>
+      </div>
       <h3 class="course-title">Electronic Circuits</h3>
       <p class="course-desc">Fundamentals of Design and Analysis of Electronic Circuits.</p>
-      <a href="electronic-circuits.html" class="course-btn" target="_blank"><i class="fa-solid fa-arrow-up-right-from-square"></i> Explore Resources</a>
+      <a href="electronic-circuits.html" class="course-btn"><i class="fa-solid fa-arrow-up-right-from-square"></i>
+        Explore Resources</a>
     </div>
 
     <div class="course-card" data-title="Java" data-desc="برمجة جافا">
-      <div class="course-header"><div class="course-icon"><i class="fa-solid fa-book-open"></i></div><span class="badge beginner">Beginner</span><span class="badge-outline">4 Resources</span></div>
+      <div class="course-header">
+        <div class="course-icon"><i class="fa-solid fa-book-open"></i></div><span
+          class="badge beginner">Beginner</span><span class="badge-outline">4 Resources</span>
+      </div>
       <h3 class="course-title">Java Programming</h3>
       <p class="course-desc">Learn Java Programming to build different app</p>
-      <a href="programming-java.html" class="course-btn" target="_blank"><i class="fa-solid fa-arrow-up-right-from-square"></i> Explore Resources</a>
+      <a href="programming-java.html" class="course-btn"><i class="fa-solid fa-arrow-up-right-from-square"></i> Explore
+        Resources</a>
     </div>
 
-    <!-- المساقات الإضافية -->
     <div class="course-card" data-title="Math for Engineering" data-desc="رياضيات للهندسة">
-      <div class="course-header"><div class="course-icon"><i class="fa-solid fa-square-root-variable"></i></div><span class="badge advanced">Advanced</span><span class="badge-outline">6 Resources</span></div>
+      <div class="course-header">
+        <div class="course-icon"><i class="fa-solid fa-square-root-variable"></i></div><span
+          class="badge advanced">Advanced</span><span class="badge-outline">4 Resources</span>
+      </div>
       <h3 class="course-title">Mathematical Engineering</h3>
       <p class="course-desc">Essential mathematics fundamentals for engineering.</p>
-      <a href="mathematics-engineering.html" class="course-btn"><i class="fa-solid fa-arrow-up-right-from-square"></i> Explore Resources</a>
+      <a href="mathematics-engineering.html" class="course-btn"><i class="fa-solid fa-arrow-up-right-from-square"></i>
+        Explore Resources</a>
     </div>
 
     <div class="course-card" data-title="Cyber Security" data-desc="الأمن السيبراني">
-      <div class="course-header"><div class="course-icon"><i class="fa-solid fa-shield-halved"></i></div><span class="badge advanced">Advanced</span><span class="badge-outline">8 Resources</span></div>
+      <div class="course-header">
+        <div class="course-icon"><i class="fa-solid fa-shield-halved"></i></div><span
+          class="badge advanced">Advanced</span><span class="badge-outline">5 Resources</span>
+      </div>
       <h3 class="course-title">Cyber Security</h3>
       <p class="course-desc">Protecting systems and networks from attacks.</p>
-      <a href="cybersecurity.html" class="course-btn"><i class="fa-solid fa-arrow-up-right-from-square"></i> Explore Resources</a>
+      <a href="cybersecurity.html" class="course-btn"><i class="fa-solid fa-arrow-up-right-from-square"></i> Explore
+        Resources</a>
     </div>
 
     <div class="course-card" data-title="Mobile Programming" data-desc="برمجة الهواتف الذكية">
-      <div class="course-header"><div class="course-icon"><i class="fa-solid fa-mobile-screen-button"></i></div><span class="badge medium">Intermediate</span><span class="badge-outline">6 Resources</span></div>
+      <div class="course-header">
+        <div class="course-icon"><i class="fa-solid fa-mobile-screen-button"></i></div><span
+          class="badge medium">Intermediate</span><span class="badge-outline">5 Resources</span>
+      </div>
       <h3 class="course-title">Smartphone Programming</h3>
       <p class="course-desc">Developing applications for Android and iOS.</p>
-      <a href="mobile-programming.html" class="course-btn"><i class="fa-solid fa-arrow-up-right-from-square"></i> Explore Resources</a>
+      <a href="mobile-programming.html" class="course-btn"><i class="fa-solid fa-arrow-up-right-from-square"></i>
+        Explore Resources</a>
     </div>
 
     <div class="course-card" data-title="Communications & Signals" data-desc="الاتصالات والإشارات الرقمية">
-      <div class="course-header"><div class="course-icon"><i class="fa-solid fa-wave-square"></i></div><span class="badge advanced">Advanced</span><span class="badge-outline">5 Resources</span></div>
+      <div class="course-header">
+        <div class="course-icon"><i class="fa-solid fa-wave-square"></i></div><span
+          class="badge advanced">Advanced</span><span class="badge-outline">3 Resources</span>
+      </div>
       <h3 class="course-title">Signals and Communication Systems</h3>
       <p class="course-desc">Understanding the signals and communication systems.</p>
-      <a href="communications-digital-signals.html" class="course-btn"><i class="fa-solid fa-arrow-up-right-from-square"></i> Explore Resources</a>
+      <a href="communications-digital-signals.html" class="course-btn"><i
+          class="fa-solid fa-arrow-up-right-from-square"></i> Explore Resources</a>
     </div>
 
     <div class="course-card" data-title="IoT" data-desc="إنترنت الأشياء">
-      <div class="course-header"><div class="course-icon"><i class="fa-solid fa-network-wired"></i></div><span class="badge medium">Intermediate</span><span class="badge-outline">4 Resources</span></div>
+      <div class="course-header">
+        <div class="course-icon"><i class="fa-solid fa-network-wired"></i></div><span
+          class="badge medium">Intermediate</span><span class="badge-outline">4 Resources</span>
+      </div>
       <h3 class="course-title">Internet of Things</h3>
       <p class="course-desc">Connecting devices and systems over the internet.</p>
-      <a href="internet-of-things.html" class="course-btn"><i class="fa-solid fa-arrow-up-right-from-square"></i> Explore Resources</a>
+      <a href="internet-of-things.html" class="course-btn"><i class="fa-solid fa-arrow-up-right-from-square"></i>
+        Explore Resources</a>
     </div>
 
     <div class="course-card" data-title="Robot1" data-desc="روبوت 1">
-      <div class="course-header"><div class="course-icon"><i class="fa-solid fa-robot"></i></div><span class="badge medium">Intermediate</span>
-      <span class="badge-outline">6 Resources</span></div>
+      <div class="course-header">
+        <div class="course-icon"><i class="fa-solid fa-robot"></i></div><span class="badge medium">Intermediate</span>
+        <span class="badge-outline">6 Resources</span>
+      </div>
       <h3 class="course-title">Robot 1</h3>
       <p class="course-desc">Introdaction about Programming & Designing Robots</p>
-      <a href="robotics1.html" class="course-btn"><i class="fa-solid fa-arrow-up-right-from-square"></i> Explore Resources</a>
+      <a href="robotics1.html" class="course-btn"><i class="fa-solid fa-arrow-up-right-from-square"></i> Explore
+        Resources</a>
     </div>
 
   </section>
 
-  <footer class="footer" >
+  <!-- Footer (end) section -->
+  <footer class="footer">
     <div class="container2">
-      <div class="footer-logo"><h1 class="fa-solid fa-graduation-cap" ></h1></div>
+      <div class="footer-logo">
+        <h1 class="fa-solid fa-graduation-cap"></h1>
+      </div>
       <div>
-      <h3> About Gudie</h3>
-      <p> This guide was created with love by Computer Engineering student to help their peers in the learning journey.</p>
-      <p> What are you waiting for? Start now! 🚀</p> </div>
-   
-<div>
-  <h3>Important Links</h3>
-  <ul>
-    <li><a href="more.html" target="_blank"> more about us </a></li><br>
-    <li><a href="tips.html" target="_blank"> Study tips by guide </a></li>
-  </ul>
-</div>
+        <!-- Brief overview of the site -->
+        <h3> About Gudie</h3>
+        <p> This guide was created with love by Computer Engineering student to help their peers in the learning
+          journey.</p>
+        <p> What are you waiting for? Start now! 🚀</p>
+      </div>
 
-    <div> 
-      <h3> Contant With Us</h3>
-      <ul>
-        <li> Whatsapp : +972598051510</li> <br>
-        <li> Gmail : mayaralhabbash00@gmail.com</li> <br>
-        <li> Location : palestine - gaza city</li>
-      </ul>
+      <div>
+        <h3>Important Links</h3>
+        <ul>
+          <li><a href="more.html"> more about us </a></li><br>
+          <li><a href="tips.html"> Study tips by guide </a></li>
+        </ul>
+      </div>
+
+      <div>
+        <h3> Contant With Us</h3>
+        <ul>
+          <li> Whatsapp : +972598051510</li> <br>
+          <li> Gmail : mayaralhabbash00@gmail.com</li> <br>
+          <li> Location : palestine - gaza city</li>
+        </ul>
+      </div>
     </div>
-  </div>
-<hr>
-    <p > @ Copyright 2025</p>
+    <hr>
+    <p> @ Copyright 2025</p>
   </footer>
 
+  <!-- Link the file to js file -->
   <script src="script.js"></script>
 </body>
+
 </html>

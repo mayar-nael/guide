@@ -1,30 +1,137 @@
 <!DOCTYPE html>
-<html lang="ar" dir="rtl">
+
 <head>
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1" />
-  <title>تطوير الويب - دليل هندسة الحاسوب</title>
+  <title>Web Development - Guide</title>
   <link rel="stylesheet" href="style.css" />
 </head>
+
 <body>
   <header class="header">
-    <div class="container logo-area">
+    <div class="course-area">
       <div class="icon-circle">🌐</div>
-      <h1 class="title">تطوير الويب</h1>
+      <h1 class="title">Web Development</h1>
     </div>
   </header>
 
-  <main class="container">
+  <section class="container">
     <section>
-      <h2 class="section-title">مقدمة في تطوير الويب</h2>
-      <p>
-        تطوير الويب يشمل بناء وتصميم المواقع والتطبيقات التي تعمل عبر الإنترنت باستخدام تقنيات مثل HTML, CSS, JavaScript.
-      </p>
+      <h2 class="section-title">Introdaction about Web Development</h2>
+      <p>Web development involves building and designing websites and applications that operate online using
+        technologies such as HTML, CSS, and JavaScript. </p>
     </section>
 
+    <br>
     <section>
-      <h3>مصادر تعليمية</h3>
-      <ul>
-        <li><a href="https://developer.mozilla.org/ar/docs/Learn" target="_blank">MDN Web Docs - تطوير الويب</a></li>
-        <li><a href="https://www.freecodecamp.org/learn/" target="_blank">FreeCodeCamp</a></li>
-        <li><a href="https://www.youtube.com/watch?v=3JluqTojuME" target="_blank">
+      <h2>
+        <center>Educational Resources</center>
+      </h2>
+    </section>
+    <div class="head1">
+      <section class="courses container1" id="coursesList">
+
+
+        <!-- first course -->
+        <div class="course-card1" data-title="Web Development" data-desc="Web Development">
+          <div class="course-header">
+            <div class="course-icon"><i class="fa-solid fa-code"></i></div>
+            <span class="badge beginner">Beginner–Intermediate</span>
+            <span class="badge-outline">Platform</span>
+          </div>
+          <h3 class="course-title">FreeCodeCamp Platform</h3>
+          <p class="course-desc">A free and comprehensive platform covering HTML, CSS, JavaScript, frontend, backend,
+            and full projects with certifications</p>
+          <a href="https://www.freecodecamp.org/" target="_blank" class="course-btn"><i
+              class="fa-solid fa-arrow-up-right-from-square"></i> View </a>
+        </div>
+
+        <!-- second course -->
+        <div class="course-card1" data-title="Web Development" data-desc="Web Development">
+          <div class="course-header">
+            <div class="course-icon"><i class="fa-solid fa-code"></i></div>
+            <span class="badge beginner">Beginner–Intermediate</span>
+            <span class="badge-outline">Curriculum</span>
+          </div>
+          <h3 class="course-title">The Odin Project</h3>
+          <p class="course-desc">A complete curriculum for web development, including Frontend, Backend,
+            Git, and Databases, with hands-on projects.</p>
+          <a href="https://www.theodinproject.com/" target="_blank" class="course-btn"><i
+              class="fa-solid fa-arrow-up-right-from-square"></i> View </a>
+        </div>
+        <!-- third course -->
+        <div class="course-card1" data-title="Web Development" data-desc="Web Development">
+          <div class="course-header">
+            <div class="course-icon"><i class="fa-solid fa-code"></i></div>
+            <span class="badge beginner">Beginner</span>
+            <span class="badge-outline">Course Website</span>
+          </div>
+          <h3 class="course-title">w3schools Cources ( Video - Document )</h3>
+          <p class="course-desc">A quick and easy reference for learning web technologies (HTML, CSS, JavaScript, PHP,
+            SQL).
+            Great for beginners and quick lookups</p>
+          <a href="https://www.w3schools.com/" target="_blank" class="course-btn"><i
+              class="fa-solid fa-arrow-up-right-from-square"></i> View </a>
+        </div>
+
+        <!-- fourth course -->
+        <div class="course-card1" data-title="Web Development" data-desc="Web Development">
+          <div class="course-header">
+            <div class="course-icon"><i class="fa-solid fa-code"></i></div>
+            <span class="badge beginner">Beginner–Advanced</span>
+            <span class="badge-outline">Document </span>
+          </div>
+          <h3 class="course-title">MDN Web Docs (Mozilla Developer Network)</h3>
+          <p class="course-desc">The most reliable and official documentation for web technologies, covering HTML,
+            CSS, JavaScript, and APIs in detail.</p>
+          <a href="https://developer.mozilla.org/" target="_blank" class="course-btn"><i
+              class="fa-solid fa-arrow-up-right-from-square"></i> View </a>
+        </div>
+
+        <!-- fifth course -->
+        <div class="course-card1" data-title="Web Development" data-desc="Web Development">
+          <div class="course-header">
+            <div class="course-icon"><i class="fa-solid fa-code"></i></div>
+            <span class="badge beginner">Intermediate–Advanced</span>
+            <span class="badge-outline">Course</span>
+          </div>
+          <h3 class="course-title">CS50’s Web Programming with Python and JavaScript (Harvard)</h3>
+          <p class="course-desc">A university-level course focusing on web programming using Python (Django),
+            JavaScript,
+            SQL, and APIs</p>
+          <a href="https://cs50.harvard.edu/web/" target="_blank" class="course-btn"><i
+              class="fa-solid fa-arrow-up-right-from-square"></i> View </a>
+        </div>
+
+        <!-- sexth course -->
+        <div class="course-card1" data-title="Web Development" data-desc="Web Development">
+          <div class="course-header">
+            <div class="course-icon"><i class="fa-solid fa-code"></i></div>
+            <span class="badge beginner">Intermediate–Advanced</span>
+            <span class="badge-outline">Course</span>
+          </div>
+          <h3 class="course-title">Frontend Masters</h3>
+          <p class="course-desc">A professional learning platform focusing on modern frontend development
+            (React, Vue, Angular, performance, security). Great for advanced learners.</p>
+          <a href="https://frontendmasters.com/" target="_blank" class="course-btn"><i
+              class="fa-solid fa-arrow-up-right-from-square"></i> View </a>
+        </div>
+
+    </div>
+  </section>
+
+  <br>
+  <center>
+    <section>
+      <a href="index.html" class="back"> > Back To Courses Page</a>
+    </section>
+  </center>
+
+  <br><br>
+
+  <footer class="footer">
+    <p>© Copyright 2025</p>
+  </footer>
+</body>
+
+</html>

@@ -1,274 +1,348 @@
+/* Fonts and general formatting */
 body {
-    font-family: 'Cairo', sans-serif;
-    margin: 0;
-    padding: 0;
-    
-    background: linear-gradient(to bottom right, #d1e4f7, #f1f5f9);
-    color: #333;
-  }
-  
-  /* الحاويات */
-  .container {
-    width: 90%;
-    max-width: 1200px;
-    margin: auto;
-    padding-left:  70px;
-  }
-  
-  .container1 {
-    width: 100%;
-    /* padding-left: 300px; */
-    /* max-width: 700px;  */
-    margin: auto;
-    display: grid;
-  }
-  
-  /* الهيدر */
-  .header {
-    background: linear-gradient(to bottom right , white, #9ccdee, #82b0ce , #6da2c5 );
-    /* color: #385d76; */
-    color: #333;
-    text-align: center;
-    padding: 20px ;
-  }
-  
-  .logo-area {
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    gap: 10px;
-  }
-  
-  .icon-circle {
-    background: #385d76;
-    color: #333;
-    
-    border-radius: 50%;
-    padding: 10px;
-    font-size: 20px;
-  }
-  
-  .title {
-    font-size: 40px;
-    font-family: Georgia, 'Times New Roman', Times, serif;
-    margin: 0;
-  }
-  
-  .spark {
-    color: yellow;
-  }
-  
-  .subtitle {
-    margin: 5px 0 20px;
-    font-size: 16px;
-  }
-  
-  /* البحث */
-  .search-bar {
-    display: flex;
-    justify-content: center;
-    gap: 5px;
-  }
-  
-  .search-bar input {
-    padding: 10px;
-    border: none;
-    border-radius: 5px;
-    width: 250px;
-  }
-  
-  .search-bar button {
-    background: rgb(221, 224, 176);
-    border: none;
-    padding: 10px 15px;
-    border-radius: 5px;
-    cursor: pointer;
-    font-weight: bold;
-  }
-  
-  /* الإحصائيات */
-  .stats {
-    display: flex;
-    justify-content: center;
-    flex-wrap: wrap;
-    margin: 30px 0;
-    gap: 20px;
-  }
-  
-  .stat-box {
-    background:light;
-    padding: 15px;
-    border-radius: 50px;
-    text-align: center;
-    width: 150px;
-    box-shadow: 0 2px 5px rgba(0,0,0,0.3);
-  }
-  
-  .stat-number {
-    font-size: 24px;
-    font-weight: bold;
-  }
-  
-  .stat-label {
-    font-size: 14px;
-    color: gray;
-  }
-  
-  /* العناوين */
-  .section-title  {
-    text-align: center;
-    font-size: xx-large;
-  }
-  
-  .section-discrebtion{
-    text-align: center;
-    font-size: medium;
-  }
-  
-  
-  .section-subtitle {
-    text-align: center;
-    color: gray;
-  }
-  
-  /* الكروت */
-  .courses {
-    display: grid;
-    grid-template-columns: repeat(auto-fill, minmax(250px, 1fr));
-    gap: 15px;
-    margin: 20px 0;
-  }
-  
-  .course-card {
-    background: white;
-    border-radius: 10px;
-    padding: 15px;
-    box-shadow: 0 2px 5px rgba(0,0,0,0.1);
-    display: flex;
-    flex-direction: column;
-    gap: 10px;
-  }
-  
+  font-family: 'Cairo', sans-serif;
+  margin: 0;
+  padding: 0;
+  background: linear-gradient(to bottom right, #d1e4f7, #f1f5f9);
+  color: #333;
+}
+
+/* Courses Container */
+.container {
+  width: 90%;
+  max-width: 1200px;
+  margin: auto;
+  padding-left: 70px;
+}
+
+/* Resources Container */
+.container1 {
+  width: 100%;
+  margin: auto;
+  display: grid;
+}
+
+/* Header Of Index Page - Guide */
+.header {
+  background: linear-gradient(to bottom right, white, #9ccdee, #82b0ce, #6da2c5);
+  color: #333;
+  text-align: center;
+  padding: 20px;
+}
+
+/* Header of courses page*/
+.course-area {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 10px;
+}
+
+/* color of the book icon used in the header of the homepage from Font Awesome library */
+.fa-book {
+  color: #1b4d83;
+}
+
+/* The area surrounding the course logo on the internal pages */
+.icon-circle {
+  background: #385d76;
+  color: #333;
+  border-radius: 50%;
+  padding: 10px;
+  font-size: 20px;
+}
+
+/* Page title*/
+.title {
+  font-size: 40px;
+  font-family: Georgia, 'Times New Roman', Times, serif;
+  margin: 0;
+}
+
+
+.subtitle {
+  font-size: 14px;
+}
+
+/* search*/
+.search-bar {
+  display: flex;
+  justify-content: center;
+  gap: 5px;
+}
+
+/* The input text for search */
+.search-bar input {
+  padding: 10px;
+  border: none;
+  border-radius: 5px;
+  width: 250px;
+}
+
+/* search button */
+.search-bar button {
+  background: rgb(221, 224, 176);
+  border: none;
+  padding: 10px 15px;
+  border-radius: 5px;
+  cursor: pointer;
+  font-weight: bold;
+}
+
+/* Information Boxes */
+.Information {
+  display: flex;
+  justify-content: center;
+  flex-wrap: wrap;
+  margin: 30px 0;
+  gap: 20px;
+}
+
+/* Information boxes at main page*/
+.Information-box {
+  background: light;
+  padding: 15px;
+  border-radius: 50px;
+  text-align: center;
+  width: 150px;
+  box-shadow: 0 2px 5px rgba(0, 0, 0, 0.3);
+}
+
+.Information-number {
+  font-size: 24px;
+  font-weight: bold;
+}
+
+.Information-label {
+  font-size: 14px;
+  color: gray;
+}
+
+/* titles */
+.section-title {
+  text-align: center;
+  font-size: xx-large;
+}
+
+.section-discrebtion {
+  text-align: center;
+  font-size: medium;
+}
+
+
+.section-subtitle {
+  text-align: center;
+  color: gray;
+}
+
+/* Card layout on the main page */
+.courses {
+  display: grid;
+  grid-template-columns: repeat(auto-fill, minmax(250px, 1fr));
+  gap: 15px;
+  margin: 20px 0;
+}
+
+/* Course cards on the main page */
+.course-card {
+  background: white;
+  border-radius: 10px;
+  padding: 15px;
+  box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+  /*make a shadow*/
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+  flex-wrap: wrap;
+  /* Allow transition to a new page if the screen is cramped */
+}
+
+/* كروت المصادر */
+.course-card1 {
+  background: white;
+  border-radius: 10px;
+  padding: 15px;
+  box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+  flex-wrap: wrap;
+}
+
+.course-header {
+  display: flex;
+  align-items: center;
+  gap: 10px;
+}
+
+/* The color of the icons next to the course name on the homepage */
+.course-icon {
+  font-size: 20px;
+  color: #4a90e2;
+}
+
+/* The widgets inside the course cards on the homepage */
+.badge {
+  padding: 5px 8px;
+  border-radius: 5px;
+  font-size: 12px;
+  color: white;
+}
+
+.badge.beginner {
+  background: rgb(56, 115, 133);
+}
+
+.badge.medium {
+  background: rgb(224, 147, 2);
+}
+
+.badge.advanced {
+  background: red;
+}
+
+/* The surrounding area of the classification boxes within the cards */
+.badge-outline {
+  border: 1px solid gray;
+  padding: 4px 7px;
+  border-radius: 5px;
+  font-size: 12px;
+}
+
+
+.course-title {
+  font-size: 16px;
+  font-weight: bold;
+}
+
+.course-desc {
+  font-size: 14px;
+  color: gray;
+}
+
+.course-btn {
+  background: #4a90e2;
+  color: white;
+  text-decoration: none;
+  /*To raise the line that is automatically under any link.*/
+  padding: 8px;
+  margin-top: auto;
+  text-align: center;
+  border-radius: 5px;
+}
+
+.course-btn:hover {
+  background: #9eb0c4;
+}
+
+/* back button */
+.back {
+  background: #385d76;
+  color: white;
+  text-decoration: none;
+  padding: 20px;
+  text-align: center;
+  border-radius: 5px;
+}
+
+
+.footer {
+  background: #9fd1f2;
+  color: #333;
+  padding: 5px 30px;
+  text-align: center;
+  font-size: small;
+  margin-top: 60px;
+}
+
+.container2 {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 30px;
+}
+
+.footer-logo {
+  justify-content: center;
+  align-items: center;
+  font-size: 30px;
+}
+
+.more,
+.tips {
+  font-size: 23px;
+}
+
+.fa-heart {
+  color: #82b0ce;
+}
+
+.fa-gem {
+  color: rgb(240, 126, 143);
+}
+
+.fa-comment {
+  color: darkblue;
+}
+
+/*Increase the size of the icons*/
+.fa-comment,
+.fa-gem,
+.fa-heart,
+.fa-users {
+  font-size: 40px;
+}
+
+
+/* To make the design suitable for all screen sizes : */
+
+/* Small screens less than 600px */
+
+@media (max-width: 600px) {
+  .course-card,
   .course-card1 {
-    background: white;
-    border-radius: 10px;
-    padding: 15px;
-    box-shadow: 0 2px 5px rgba(0,0,0,0.1);
     display: flex;
     flex-direction: column;
-    gap: 10px;
-  
-  }
-  
-  .course-header {
-    display: flex;
     align-items: center;
-    gap: 10px;
-  }
-  
-  .course-icon {
-    font-size: 20px;
-    color: #4a90e2;
-  }
-  
-  .badge {
-    padding: 5px 8px;
-    border-radius: 5px;
-    font-size: 12px;
-    color: white;
-  }
-  
-  .badge.beginner {
-    background: rgb(56, 115, 133);
-  }
-  
-  .badge.medium {
-    background: rgb(224, 147, 2);
-  }
-  
-  .badge.advanced {
-    background: red;
-  }
-  
-  .badge-outline {
-    border: 1px solid gray;
-    padding: 4px 7px;
-    border-radius: 5px;
-    font-size: 12px;
-  }
-  
-  .course-title {
-    font-size: 16px;
-    font-weight: bold;
-  }
-  
-  .course-desc {
-    font-size: 14px;
-    color: gray;
-  }
-  
-  .course-btn {
-    background: #4a90e2;
-    color: white;
-    text-decoration: none;
-    padding: 8px;
-    margin-top: auto;
-    text-align: center;
-    border-radius: 5px;
-    transition: background 0.3s;
-  }
-  
-  .course-btn:hover {
-    background: #357abd;
-  }
-  
-  /* الفوتر */
-  .footer {
-    /* background: linear-gradient(to right, #9fd1f2, #bddff6); */
-    background: #6ba6af;
-    color: #cbeaf5;
-    padding: 5px 30px;
-    text-align: center;
-    font-size: small;
-  }
-  .footer1{
-    padding: 5px ;
-    margin-top: 60px;
-    text-align: center;
-    font-size: small;
-  }
-  
-  .container2{
-    display: flex;
-    gap: 30px;
-  }
-  
-  .footer-logo {
-  
     justify-content: center;
+    width: 70%;
+    max-width: 400px;
+    margin: 10px ;
+    background-color: #2196F3;
+  }
+  .course-card {
+    width: 70%;          /* يجعل البطاقة أصغر من الشاشة */
+    max-width: 400px;    /* الحد الأقصى للعرض */
+    margin: 10px ;   /* يضع البطاقة في الوسط أفقياً */
+    padding: 15px ;       /* مساحة داخلية للنصوص */
+    border-radius: 10px; /* لتنعيم الزوايا */
+    display: flex;
+    flex-direction: column;
+    align-items: center;      /* محاذاة العناصر أفقيًا */
+    justify-content: space-between; /* توزيع العناصر بشكل متساوي عموديًا */
+    background-color: #2196F3;
+  }
+  .course-content {
+    text-align: center;  /* محاذاة النصوص بالوسط */
+  }
+  .course-card button {
+    width: 80%;          /* يجعل الزر ممتد داخل البطاقة */
+    text-align: center;
+    margin-top: 10px;
+  }
+      
+}
+
+/* Medium screens between 601px and 1024px */
+@media (min-width: 601px) and (max-width: 1024px) {
+  .course-card {
+    flex: 1 1 45%;
     align-items: center;
-    
-    font-size: 30px;
+    justify-items: center;
+    /* Two elements in the row */
   }
-  .more , .tips{
-    font-size: 23px;
+
+  .course-card1 {
+    flex: 1 1 45%;
+    /* Two elements in the row */
   }
-  .fa-heart{
-    color: #82b0ce;
-  }
-  .fa-gem{
-    color: rgb(240, 126, 143);
-  }
-  .fa-comment{
-    color: darkblue;
-  }
-  
-  .fa-comment , .fa-gem , .fa-heart , .fa-users {
-    font-size: 40px;
-  }
-  .image{
-    padding: 5px 25px;
-    border-radius: 50%;
-    width: 150px;
-    
-  }
+}
