@@ -297,7 +297,8 @@ body {
 
 /* Small screens less than 600px */
 
-@media (max-width: 600px) {
+@media (max-width: 768px) {
+
   .course-card,
   .course-card1 {
     display: flex;
@@ -306,34 +307,72 @@ body {
     justify-content: center;
     width: 70%;
     max-width: 400px;
-    margin: 10px ;
-    background-color: #2196F3;
+    margin: 10px;
+    background-color: #2d6592;
+    color: #f1f5f9;
   }
+
   .course-card {
-    width: 70%;          /* يجعل البطاقة أصغر من الشاشة */
-    max-width: 400px;    /* الحد الأقصى للعرض */
-    margin: 10px ;   /* يضع البطاقة في الوسط أفقياً */
-    padding: 15px ;       /* مساحة داخلية للنصوص */
-    border-radius: 10px; /* لتنعيم الزوايا */
+    width: 70%;
+    /* يجعل البطاقة أصغر من الشاشة */
+    max-width: 400px;
+    /* الحد الأقصى للعرض */
+    margin: 10px;
+    /* يضع البطاقة في الوسط أفقياً */
+    padding: 15px;
+    /* مساحة داخلية للنصوص */
+    border-radius: 10px;
+    /* لتنعيم الزوايا */
     display: flex;
     flex-direction: column;
-    align-items: center;      /* محاذاة العناصر أفقيًا */
-    justify-content: space-between; /* توزيع العناصر بشكل متساوي عموديًا */
-    background-color: #2196F3;
+    align-items: center;
+    /* محاذاة العناصر أفقيًا */
+    justify-content: space-between;
+    /* توزيع العناصر بشكل متساوي عموديًا */
+    background-color: #2d6592;
+    color: #f1f5f9;
   }
+
   .course-content {
-    text-align: center;  /* محاذاة النصوص بالوسط */
+    text-align: center;
+    /* محاذاة النصوص بالوسط */
   }
+
   .course-card button {
-    width: 80%;          /* يجعل الزر ممتد داخل البطاقة */
+    width: 80%;
+    /* يجعل الزر ممتد داخل البطاقة */
     text-align: center;
     margin-top: 10px;
   }
-      
+
+  .course-inform>p,
+  h2 {
+    width: 80%;
+    text-align: center;
+  }
+
+  .course-desc {
+    color: #333;
+  }
+
+  .section-title {
+    font-size: 30px;
+    margin: auto;
+  }
+
+  .container2 {
+    display: block;
+    justify-items: center;
+  }
+  .tips , .more {
+    text-align: center;
+    font-size: small;
+    width: 80%;
+  }
 }
 
 /* Medium screens between 601px and 1024px */
-@media (min-width: 601px) and (max-width: 1024px) {
+@media (min-width: 768px) and (max-width: 1024px) {
   .course-card {
     flex: 1 1 45%;
     align-items: center;
